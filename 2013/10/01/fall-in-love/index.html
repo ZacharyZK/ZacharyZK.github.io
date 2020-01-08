@@ -14,32 +14,35 @@
 <meta property="og:url" content="http://yoursite.com/2013/10/01/fall-in-love/index.html">
 <meta property="og:site_name" content="Zachary and Alan">
 <meta property="og:description" content="感恩相遇，不计得失">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/jitang.jpg">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/jitang.jpg?imageMogr2/auto-orient%7Cimageslim">
 <meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/%E6%83%A0%E4%B8%B0%E6%B9%96.jpg">
 <meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/%E6%B1%87%E4%B8%B0%E5%A3%B6.jpg">
 <meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/nvshen.jpeg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/bingzhuang.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/haimati.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/haha.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/liang.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/piao.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/enne.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/zhuang.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/douji.jpg">
-<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/xiyanglan.jpg">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/bingzhuang.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/haimati.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/haha.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/liang.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/piao.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/enne.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/zhuang.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/douji.jpg?imageMogr2/auto-orient%7Cimageslim">
+<meta property="og:image" content="http://q3pxh3kn9.bkt.clouddn.com/xiyanglan.jpg?imageMogr2/auto-orient%7Cimageslim">
 <meta property="article:published_time" content="2013-09-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-07T13:35:40.178Z">
+<meta property="article:modified_time" content="2020-01-08T12:36:57.633Z">
 <meta property="article:author" content="Zachary">
 <meta property="article:tag" content="Alan">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://q3pxh3kn9.bkt.clouddn.com/jitang.jpg">
+<meta name="twitter:image" content="http://q3pxh3kn9.bkt.clouddn.com/jitang.jpg?imageMogr2/auto-orient%7Cimageslim">
   
     <link rel="alternative" href="/atom.xml" title="Zachary and Alan" type="application/atom+xml">
   
   
-    <link rel="icon" href="/assets/img/icon.jpg">
+    <link rel="icon" href="/assets/img/icon32.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
+  
+	<link rel="stylesheet" type="text/css" href="/./avatarrotation.css">
+  
   <style type="text/css">
   
     #container.show {
@@ -57,7 +60,28 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4F4F4F"></div>
+<!--<div class="overlay" style="background: #4F4F4F"> -->
+<div class="overlay" >
+</div>
+<!-- 添加“心知天气"-->
+
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "slim",
+      location: "WXH13WQT7XKN",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "auto",
+      token: "ad77c509-35e9-4736-85e2-a1d428084abf",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
+
+<!-- 添加“心知天气"-->
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -75,7 +99,7 @@
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
-				<li><a href="/">相册</a></li>
+				<li><a href="/photos">相册</a></li>
 	        
 			</ul>
 		</nav>
@@ -106,6 +130,13 @@
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
+		<!-- 《左侧边栏添加--网易云音乐插件 -->
+		<!-- https://www.writebug.site/2018/04/21/hexo-yilia个性化之-添加背景音乐/ -->
+		
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=228 height=86 
+        			src="//music.163.com/outchain/player?type=2&id=1371939273&auto=0&height=66"></iframe>
+		
+		<!-- 网易云音乐插件》-->
 		</nav>
 	</header>		
 </div>
@@ -159,7 +190,7 @@
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/photos">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -186,9 +217,11 @@
   
 
         
-        <a href="/2013/10/01/fall-in-love/" class="archive-article-date">
+        
+<a href="/2013/10/01/fall-in-love/" class="archive-article-date">
   	<time datetime="2013-09-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2013-10-01</time>
 </a>
+        
         
       </header>
     
@@ -209,7 +242,7 @@
 <br/>
 大宝，还记得我们第一次相遇吗？最美遇见你，这是怎样的机缘巧合，又是多少次上辈子的千百次的擦肩而过，又是多少次的回眸，导致了我那时那刻遇见你，导致我的腰酸背痛和颈椎痛（一切都是因为擦肩和回眸）。哈哈 <br>
 <div align = center>
-<img src="http://q3pxh3kn9.bkt.clouddn.com/jitang.jpg" width="400" height="300">
+<img src="http://q3pxh3kn9.bkt.clouddn.com/jitang.jpg?imageMogr2/auto-orient|imageslim" width="400" height="300">
 </div>
 <br/>
 于千万人之中遇到你所遇到的人，于千万年之中，时间的无涯的荒野里，没有早一步，也没有晚一步，刚巧赶上了，那也没有别的话好说，唯有轻轻的说一声：“我们在一起吧！！！” <br>
@@ -242,47 +275,47 @@
 <br>
 </font>
 </div>
+</div>
 
 
 <div align=center>
-<img src="http://q3pxh3kn9.bkt.clouddn.com/bingzhuang.jpg" width="400" height="300">
+<img src="http://q3pxh3kn9.bkt.clouddn.com/bingzhuang.jpg?imageMogr2/auto-orient|imageslim" width="250" height="300">
 <font face="楷体" color="blue" size="4">
 <br/>
 <br/>
 <div align=left>
-我也不知道为什么是旋转90度的，但不论怎么旋转，就是帅！！！
-<br>
-<br>
+还有你的男神，也是八路出身呢！！！
+</div>
 </font>
+<br>
 </div>
 
-<div align=left>
+
 
 <h2 id="还记得我们的-”海马体“"><a href="#还记得我们的-”海马体“" class="headerlink" title="还记得我们的 ”海马体“"></a>还记得我们的 ”海马体“</h2><blockquote>
 <p>有些人，天生一对</p>
 </blockquote>
 <table>
 <tr>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/haimati.jpg" width="250" height="300"></center></td>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/haha.jpg" width="250" height="300"></center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/haimati.jpg?imageMogr2/auto-orient|imageslim" width="250" height="300"></center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/haha.jpg?imageMogr2/auto-orient|imageslim" width="250" height="300"></center></td>
 </tr>
 </table>
 
-<font face="楷体" color= "red" size="4">
 <div align=left>
+<font face="楷体" color= "red" size="4">
+记得为什么我们要去照证件照吗？因为我们都要去研究僧面试了。说实话，这是我记忆中第一次穿正装，第一次化那么厚的粉，第一次发现穿正装正难受，第一次听到我们夫妻相。嘎嘎
 
-<p>记得为什么我们要去照证件照吗？因为我们都要去研究僧面试了。说实话，这是我记忆中第一次穿正装，第一次化那么厚的粉，第一次发现穿正装正难受，第一次听到我们夫妻相。嘎嘎</p>
 <p>真是充分应了那句话，”佛靠金装，人靠衣装”。穿正装，我像一个成功人士，脱了正装像是一个有为青年了，哈哈，没办法，但不管衣服怎么变，咱俩的夫妻相是变不了的。<br></font></p>
 </div>
-
 
 <h2 id="还记得我们的美好时光"><a href="#还记得我们的美好时光" class="headerlink" title="还记得我们的美好时光"></a>还记得我们的美好时光</h2><blockquote>
 <p>有些美好，是属于我俩的记忆</p>
 </blockquote>
 <table>
 <tr>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/liang.jpg" width="400" height="300">漂漂</center></td>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/piao.jpg" width="400" height="300">亮亮</center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/liang.jpg?imageMogr2/auto-orient|imageslim" width="400" height="300">漂漂</center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/piao.jpg?imageMogr2/auto-orient|imageslim" width="400" height="300">亮亮</center></td>
 </tr>
 </table>
 
@@ -296,8 +329,8 @@
 </blockquote>
 <table>
 <tr>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/enne.jpg" height="300" width="250">女神1号</center></td>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/zhuang.jpg" height="300" width="250">女神2号</center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/enne.jpg?imageMogr2/auto-orient|imageslim" height="300" width="250">女神1号</center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/zhuang.jpg?imageMogr2/auto-orient|imageslim" height="300" width="250">女神2号</center></td>
 </tr>
 </table>
 
@@ -307,8 +340,8 @@
 
 <table>
 <tr>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/douji.jpg" width="300" height="250">豆几1号</center></td>
-<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/xiyanglan.jpg" width="300" height="250">豆几2号</center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/douji.jpg?imageMogr2/auto-orient|imageslim" width="300" height="250">豆几1号</center></td>
+<td><center><img src="http://q3pxh3kn9.bkt.clouddn.com/xiyanglan.jpg?imageMogr2/auto-orient|imageslim" width="300" height="250">豆几2号</center></td>
 </tr>
 </table>
       
@@ -419,11 +452,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/24/Happy-Birthday/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/01/01/Our-Trip/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          生日快乐，我的宝
+          我们走过的地方
         
       </div>
     </a>
@@ -479,6 +512,7 @@
 
 <!--页面点击小红心-->
 <script type="text/javascript" src="/love.js"></script>
+
 
     </div>
     <script>

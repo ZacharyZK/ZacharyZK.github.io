@@ -21,9 +21,12 @@
     <link rel="alternative" href="/atom.xml" title="Zachary and Alan" type="application/atom+xml">
   
   
-    <link rel="icon" href="/assets/img/icon.jpg">
+    <link rel="icon" href="/assets/img/icon32.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
+  
+	<link rel="stylesheet" type="text/css" href="/./avatarrotation.css">
+  
   <style type="text/css">
   
     #container.show {
@@ -41,7 +44,28 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4F4F4F"></div>
+<!--<div class="overlay" style="background: #4F4F4F"> -->
+<div class="overlay" >
+</div>
+<!-- 添加“心知天气"-->
+
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "slim",
+      location: "WXH13WQT7XKN",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "auto",
+      token: "ad77c509-35e9-4736-85e2-a1d428084abf",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
+
+<!-- 添加“心知天气"-->
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -59,7 +83,7 @@
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
-				<li><a href="/">相册</a></li>
+				<li><a href="/photos">相册</a></li>
 	        
 			</ul>
 		</nav>
@@ -90,6 +114,13 @@
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
+		<!-- 《左侧边栏添加--网易云音乐插件 -->
+		<!-- https://www.writebug.site/2018/04/21/hexo-yilia个性化之-添加背景音乐/ -->
+		
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=228 height=86 
+        			src="//music.163.com/outchain/player?type=2&id=1371939273&auto=0&height=66"></iframe>
+		
+		<!-- 网易云音乐插件》-->
 		</nav>
 	</header>		
 </div>
@@ -143,7 +174,7 @@
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/photos">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -175,7 +206,8 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       	<div class="article-meta">
-	      	<a href="/2020/01/07/hello-world/" class="archive-article-date">
+	      	
+<a href="/2020/01/07/hello-world/" class="archive-article-date">
   	<time datetime="2020-01-07T11:55:28.113Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-07</time>
 </a>
         </div>
@@ -202,7 +234,8 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       	<div class="article-meta">
-	      	<a href="/2020/01/01/Our-Record/" class="archive-article-date">
+	      	
+<a href="/2020/01/01/Our-Record/" class="archive-article-date">
   	<time datetime="2019-12-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
 </a>
         </div>
@@ -250,7 +283,8 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       	<div class="article-meta">
-	      	<a href="/2019/09/24/Happy-Birthday/" class="archive-article-date">
+	      	
+<a href="/2019/09/24/Happy-Birthday/" class="archive-article-date">
   	<time datetime="2019-09-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-24</time>
 </a>
         </div>
@@ -258,6 +292,55 @@
   
     <h1 itemprop="name">
       <a class="archive-article-title" href="/2019/09/24/Happy-Birthday/">生日快乐，我的宝</a>
+    </h1>
+  
+
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Alan</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
+    
+      
+        </div></section>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+<a href="/2018/01/01/Our-Trip/" class="archive-article-date">
+  	<time datetime="2017-12-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-01</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/01/01/Our-Trip/">我们走过的地方</a>
     </h1>
   
 
@@ -298,7 +381,8 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
       	<div class="article-meta">
-	      	<a href="/2013/10/01/fall-in-love/" class="archive-article-date">
+	      	
+<a href="/2013/10/01/fall-in-love/" class="archive-article-date">
   	<time datetime="2013-09-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2013-10-01</time>
 </a>
         </div>
@@ -355,6 +439,7 @@
 
 <!--页面点击小红心-->
 <script type="text/javascript" src="/love.js"></script>
+
 
     </div>
     <script>
